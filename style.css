@@ -24,10 +24,12 @@ header{
 .navbar_m ul{
     list-style: none;
     margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
 }
-.navbar_m ul li{
+/* .navbar_m ul li{
     display: inline-block;
-}
+} */
 .navbar_m ul li a{
     text-decoration: none; 
     width: 100%; 
@@ -39,6 +41,9 @@ header{
 
 nav .container{
     padding: 30px 0px;
+}
+.navbar_l img{
+    width: 80%;
 }
 .navbar_r{
     text-align: end;
@@ -102,6 +107,9 @@ nav .container{
 }
 .third_pg_r1 p{
     color: #73879c;
+}
+.third_pg_r2_col img{
+    width: 100%;
 }
 .third_pg_r2_col div{
     background-color: #ffffff;
@@ -174,8 +182,8 @@ nav .container{
     font-size: 10px;
     padding: 5px 4px;
     position: relative;
-    bottom: 2px;
-    right: 68px;
+    bottom: 31px;
+    left: 145px;
 }
 footer{
     background-color: #283645;
@@ -187,6 +195,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     
 }
 .foot_ul ul li a{
@@ -206,3 +215,33 @@ footer{
 .foot_abtn{
     text-align: end;
 }
+
+@media only screen and (max-width: 1000px) {
+    .navbar_m{
+        display: none;
+    }
+    .s_pg_con p {
+        padding: 0px 25px 60px 25px;
+    }
+    .forth_pg_r1 p {
+        padding: 5px 10px;
+    }
+    .mainpg_con h1{
+        padding-top: 230px;
+        color: #ffffff;
+        font-size: 50px;
+    }
+    .mainpg_con p{
+        padding: 15px 30px;
+        font-size: medium;
+    }
+    .fifth_pg_col{
+        text-align: center;
+    }
+    .mainpg_con h1 {
+        padding-top: 142px;
+    }
+    .fifth_pg_col4 button{
+        position: static;
+    }
+  }
